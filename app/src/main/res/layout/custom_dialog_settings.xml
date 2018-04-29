@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_attachments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/lay_pitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Size"
+                android:typeface="serif" />
+
+            <com.aniapps.utils.HoloCircleSeekBar
+                android:id="@+id/text_size_picker"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_gravity="center"
+                app:max="40"
+                app:pointer_color="#C0C0C0"
+                app:pointer_halo_color="#88252525"
+                app:pointer_size="14dp"
+                app:text_color="#006B8E"
+                app:text_size="16sp"
+                app:wheel_active_color="#006B8E"
+                app:wheel_size="35"
+                app:wheel_unactive_color="#FFCCCCCC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pitch"
+                android:typeface="serif" />
+
+            <com.aniapps.utils.HoloCircleSeekBar
+                android:id="@+id/pitch_picker"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_gravity="center"
+                app:max="100"
+                app:pointer_color="#C0C0C0"
+                app:pointer_halo_color="#88252525"
+                app:pointer_size="14dp"
+                app:text_color="#006B8E"
+                app:text_size="16sp"
+                app:wheel_active_color="#006B8E"
+                app:wheel_size="35"
+                app:wheel_unactive_color="#FFCCCCCC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Speed"
+                android:typeface="serif" />
+
+            <com.aniapps.utils.HoloCircleSeekBar
+                android:id="@+id/speed_picker"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_gravity="center"
+                app:max="100"
+                app:pointer_color="#C0C0C0"
+                app:pointer_halo_color="#88252525"
+                app:pointer_size="14dp"
+                app:text_color="#006B8E"
+                app:text_size="16sp"
+                app:wheel_active_color="#006B8E"
+                app:wheel_size="35"
+                app:wheel_unactive_color="#FFCCCCCC" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD" />
+
+    <LinearLayout
+        android:id="@+id/add_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom|center_vertical"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <com.aniapps.utils.MaterialRippleLayout
+                android:id="@+id/lay_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/ripple_color"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Language"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#DDDDDD" />
+                </RelativeLayout>
+            </com.aniapps.utils.MaterialRippleLayout>
+
+            <com.aniapps.utils.MaterialRippleLayout
+                android:id="@+id/lay_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/ripple_color_delete"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Default"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#DDDDDD" />
+                </RelativeLayout>
+            </com.aniapps.utils.MaterialRippleLayout>
+
+            <com.aniapps.utils.MaterialRippleLayout
+                android:id="@+id/lay_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/ripple_color_share"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Set"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#DDDDDD" />
+                </RelativeLayout>
+            </com.aniapps.utils.MaterialRippleLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD" />
+    </LinearLayout>
+</LinearLayout><!--</LinearLayout>-->
+

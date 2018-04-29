@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#487083</color>
+    <color name="colorAccent">#9CC9DE</color>
+  <!--<color name="colorPrimary">#228B22</color>
+    <color name="colorPrimaryDark">#127412</color>
+    <color name="colorAccent">#32CD32</color>-->
+   <!-- <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+  <color name="text_gray">#808080</color>
+  <color name="tranferent">#80000000</color>
+  <color name="default_shadow_color">#88757575</color>
+  <color name="shadow">#AABDBDBD</color>
+  <color name="ripple_color">#3F51B5</color>
+  <color name="ripple_color_share">#f70a9426</color>
+  <color name="ripple_color_fav">#f5bc0404</color>
+  <color name="ripple_color_delete">#f9c73805</color>
+  <color name="un_read">#95a5a6</color>
+
+
+  <!--night mode-->
+  <color name="colorPrimary_n">#1B2836</color>
+  <color name="colorPrimaryDark_n">#243447</color>
+  <color name="color_night_bg">#141D26</color>
+  <color name="color_actionbar_n">#243447</color>
+  <color name="colorAccent_n">#141D26</color>
+
+
+  <color name="colorPrimary2">#4053b8</color>
+  <color name="colorPrimaryDark2">#3040a2</color>
+  <color name="colorAccent2">#fc4182</color>
+
+  <color name="colorPrimary2_n">#191a38</color>
+  <color name="colorPrimaryDark2_n">#040418</color>
+
+  <color name="foreground_color_normal">@android:color/transparent</color>
+  <color name="foreground_color_pressed">#22000000</color>
+  <color name="foreground_color_pressed_n">@color/colorAccent_n</color>
+
+  <color name="background_color">#efefef</color>
+  <color name="background_color_n">#222222</color>
+
+  <color name="content_background_color">#fafafa</color>
+  <color name="content_background_color_n">#151515</color>
+
+  <color name="background_color_pressed">#cccccc</color>
+  <color name="background_color_n_pressed">#222a58</color>
+
+  <color name="tablayout_text_color">#cccccc</color>
+  <color name="tablayout_text_color_selected">#ffffff</color>
+  <color name="tablayout_text_color_n">#333333</color>
+  <color name="tablayout_text_color_selected_n">#777777</color>
+
+  <color name="line_color">#dddddd</color>
+  <color name="line_color_n">#000000</color>
+</resources>

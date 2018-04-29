@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PageCurlView">
+        <!-- Enable/Disable debug mode -->
+        <attr name="enableDebugMode" format="boolean" />
+        <!-- Curl speed  the animation moves in px/frame -->
+        <attr name="curlSpeed" format="integer" />
+        <!-- FPS our animation will run -->
+        <attr name="updateRate" format="integer" />
+        <!-- Pixel offset the page will have from the curl edge -->
+        <attr name="initialEdgeOffset" format="integer" />
+        <!-- The curl mode to apply -->
+        <attr name="curlMode">
+            <enum name="Simple" value="0" />
+            <enum name="Dynamic" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+
+    </declare-styleable>
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <!--  <declare-styleable name="HoloCircleSeekBar">
+          <attr name="wheel_size" format="integer" />
+          <attr name="pointer_size" format="integer" />
+          <attr name="max" format="integer"></attr>
+          <attr name="show_text" format="boolean"></attr>
+          <attr name="start_angle" format="integer"></attr>
+          <attr name="end_angle" format="integer"></attr>
+          <attr name="text_size" format="integer"></attr>
+          <attr name="init_position" format="integer"></attr>
+          <attr name="wheel_active_color" format="string"></attr>
+          <attr name="wheel_unactive_color" format="string"></attr>
+          <attr name="pointer_color" format="string"></attr>
+          <attr name="pointer_halo_color" format="string"></attr>
+          <attr name="text_color" format="string"></attr>
+      </declare-styleable>-->
+
+    <declare-styleable name="HoloCircleSeekBar">
+        <attr name="wheel_size" format="integer" />
+        <attr name="pointer_size" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="show_text" format="boolean" />
+        <attr name="start_angle" format="integer" />
+        <attr name="end_angle" format="integer" />
+        <attr name="text_size" format="dimension" />
+        <attr name="init_position" format="integer" />
+        <attr name="wheel_active_color" format="string" />
+        <attr name="wheel_unactive_color" format="string" />
+        <attr name="pointer_color" format="string" />
+        <attr name="pointer_halo_color" format="string" />
+        <attr name="text_color" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JustifiedTextView">
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="textSize" format="integer" min="1" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NightOwl_TabLayout">
+        <attr name="night_textColorSelector" format="color|reference" />
+        <attr name="night_tabIndicatorColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="NightOwl_Toolbar">
+        <attr name="night_titleTextColor" format="color|reference" />
+        <attr name="night_popupTheme" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="NightOwl_CollapsingToolbarLayout">
+        <attr name="night_contentScrim" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="NightOwl_CardView">
+        <attr name="night_cardBackgroundColor" format="color" />
+    </declare-styleable>
+
+
+
+</resources>
