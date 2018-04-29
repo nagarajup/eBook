@@ -35,6 +35,8 @@ abstract class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationIt
     internal var selection: Int? = -1
     override fun onCreate(savedInstanceState: Bundle?) {
 
+
+        //test
 //        NightOwl.owlBeforeCreate(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
